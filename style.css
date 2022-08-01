@@ -1,0 +1,131 @@
+:root{
+    --main-bg-color: #dfdfef;
+    --form-bg-color: #ddd;
+    --main-border-color: #ccc;
+    --main-text-color: #fff;
+    --app-green: #4CAF50;
+    --app-black: #101010;
+}
+
+body{
+    background-image: url("img/OIP.webp");
+    margin: 0 auto;
+    max-width: 1200px;
+}
+body>header{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+}
+body > header > .Logo {
+    height: 100%;
+}
+body>header>h1{
+    font-size: 200px;
+}
+body >header >nav> ul {
+    display: flex;
+    list-style: none;
+}
+body >header>nav>ul>li{
+    border-right: 2px solid #ebcbca;
+
+}
+body ul > li > a{
+    display: block;
+    color: black;
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+    padding: 14px 16px;
+
+}
+body>header>nav>ul>li:first-child>a{
+    border-radius: 5px 0 0 5px;
+}
+
+body >header>nav>ul > li:last-child > a {
+    border-radius: 0 5px 5px 0;
+}
+body >header>nav>ul > li:last-child {
+    border-right: none;
+}
+body>main>h2{
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+form {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form > .form-field > input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form > .form-field {
+    padding: 14px;
+    background-color: var(--main-bg-color);
+    width: 46%;
+}
+
+form >.form-field:nth-child(4){
+    width: 20.5%;
+}
+form >.form-field:nth-child(5){
+    width: 20.5%;
+}
+#gender-select {
+    position: relative;
+}
+
+#gender-select > select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.action-button{
+    margin-left: auto;
+}
+.action-button>#ADD{
+    background-color: var(--form-bg-color);
+    color: var(--app-black);
+    border: 2px solid var(--app-green);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.action-button>#RESET{
+    background-color: var(--form-bg-color);
+    color: var(--app-black);
+    border: 2px solid var(--app-green);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+form > .form-field:nth-child(3) {
+    background-color: rgba(255, 0, 0, 0.2);
+}
